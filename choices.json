@@ -1,0 +1,55 @@
+{
+  "choices": ["progressive", "conservative", "libertarian", "authoritarian"],
+  "progressive": {
+    "description": "Progressivism is a political ideology focused on reform, social equality, and advocating for change in order to address social, economic, and political inequalities. Progressives often support government intervention in the economy to correct market failures and advocate for civil rights, environmental protections, and social justice.",
+    "key_beliefs": {
+      "economic_policy": "Progressives favor government regulation of markets to reduce inequality, support policies like progressive taxation, social welfare programs, universal healthcare, and minimum wage laws.",
+      "social_policy": "They advocate for social justice, women's rights, LGBTQ+ rights, racial equality, and support for marginalized groups. They often support reforms like criminal justice reform and immigration rights.",
+      "environmental_policy": "Strongly favor environmental protections, policies to combat climate change, and investment in renewable energy."
+    },
+    "examples": {
+      "political_figures": ["Franklin D. Roosevelt", "John Dewey"],
+      "movements": ["The Green New Deal", "Black Lives Matter"],
+      "policies": ["Universal healthcare", "Progressive taxation", "Green energy investment"]
+    }
+  },
+  "conservative": {
+    "description": "Conservatism is a political ideology that emphasizes tradition, stability, and a preference for gradual or minimal change. Conservatives often advocate for limited government intervention in the economy, uphold traditional social values, and prioritize national security.",
+    "key_beliefs": {
+      "economic_policy": "Favor free-market capitalism, low taxation, and limited government regulation of businesses. Emphasize personal responsibility and individual entrepreneurship.",
+      "social_policy": "Advocate for traditional family values, religious freedom, and are generally more resistant to rapid social changes like same-sex marriage or abortion rights.",
+      "national_security_policy": "Support strong military and national security measures, often favoring a tough stance on immigration and crime."
+    },
+    "examples": {
+      "political_figures": ["Ronald Reagan", "Margaret Thatcher"],
+      "movements": ["Tea Party Movement", "National Conservatism"],
+      "policies": ["Tax cuts for businesses", "Deregulation", "Opposition to abortion rights"]
+    }
+  },
+  "libertarian": {
+    "description": "Libertarianism is a political ideology that values individual liberty, minimal government intervention in both economic and personal affairs, and upholds the belief that individuals should be free to make their own choices without state interference.",
+    "key_beliefs": {
+      "economic_policy": "Favor free markets with minimal government regulation, oppose taxation, and support the privatization of most services, including education and healthcare.",
+      "social_policy": "Strongly support civil liberties and personal freedoms, including drug legalization, freedom of speech, and same-sex marriage. Oppose government surveillance and restrictive laws.",
+      "foreign_policy": "Generally advocate for a non-interventionist foreign policy, opposing wars and military interventions unless directly tied to self-defense."
+    },
+    "examples": {
+      "political_figures": ["John Locke", "Friedrich Hayek"],
+      "movements": ["Libertarian Party", "Free State Project"],
+      "policies": ["Elimination of income tax", "Drug decriminalization", "Reducing government regulations"]
+    }
+  },
+  "authoritarian": {
+    "description": "Authoritarianism is a political ideology that favors strong central control, limited individual freedoms, and often involves strict obedience to authority, often at the expense of personal liberties and democratic processes.",
+    "key_beliefs": {
+      "government_control": "Support for centralized control by a leader or government that makes decisions for the population with minimal input from the public. Often justifies this control as necessary for maintaining order or security.",
+      "personal_freedoms": "Limit individual freedoms, such as freedom of speech, press, and assembly. The state may censor media and control the flow of information.",
+      "economic_policy": "May vary, but typically supports state control over significant parts of the economy or enforces strict regulations to ensure government stability."
+    },
+    "examples": {
+      "political_figures": ["Joseph Stalin", "Xi Jinping"],
+      "regimes": ["North Korea under Kim Jong-un", "Soviet Union under Stalin"],
+      "policies": ["State surveillance", "Censorship of media", "Suppression of political dissent"]
+    }
+  }
+}

@@ -1,3 +1,7 @@
+.DS_Store
+character_map.json
+story_*
+comic_*
 .streamlit/secrets.toml
 
 # Byte-compiled / optimized / DLL files
