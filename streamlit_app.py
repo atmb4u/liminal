@@ -8,6 +8,7 @@ from liminal import pick_philosophers, process_story
 st.title("Liminal Comics")
 st.write(
     "This app generates philosophical comics that contrasts your ideology with the philosophy of a famous philosophers."
+    "You can select your ideology from the dropdown menu."
     "Please provide your OpenAI API key to try it out. https://platform.openai.com/api-keys"
 )
 

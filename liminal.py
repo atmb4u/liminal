@@ -15,60 +15,6 @@ from multiprocessing import Pool
 # Set your OpenAI API key
 openai.api_key = os.getenv('OPENAI_API_KEY')
 
-# Define the questions with choices
-questions = [
-    {
-        "question": "What do you believe is the ideal role of government in society?",
-        "choices": {
-            "A": "Minimal intervention; government should be as small as possible.",
-            "B": "Active role in welfare and regulation to ensure social justice.",
-            "C": "Preserve traditional values and maintain national security."
-        },
-        "category": "Political Ideology",
-        "attribute": "government_role"
-    },
-    {
-        "question": "Do you believe a free-market economy or a regulated economy is better for society?",
-        "choices": {
-            "A": "Free-market economy; minimal regulations.",
-            "B": "Regulated economy to prevent inequalities.",
-            "C": "A mixed approach balancing freedom and regulation."
-        },
-        "category": "Economic Beliefs",
-        "attribute": "economic_preference"
-    },
-    {
-        "question": "Should individual rights ever be limited for the sake of the collective good?",
-        "choices": {
-            "A": "Individual rights are paramount and should not be limited.",
-            "B": "Yes, if it benefits society as a whole.",
-            "C": "Only in extreme cases."
-        },
-        "category": "Social Values",
-        "attribute": "individual_vs_collective"
-    },
-    {
-        "question": "Do you believe in a higher power or deity?",
-        "choices": {
-            "A": "Yes, and it significantly influences my life.",
-            "B": "No, I do not believe in a higher power.",
-            "C": "I'm unsure or agnostic."
-        },
-        "category": "Religious Beliefs",
-        "attribute": "belief_in_higher_power"
-    },
-    {
-        "question": "What responsibilities do individuals have toward others in their community or society?",
-        "choices": {
-            "A": "Strong responsibilities; we should actively help others.",
-            "B": "Minimal responsibilities; individuals should focus on themselves.",
-            "C": "Some responsibilities, but personal goals come first."
-        },
-        "category": "Ethical Responsibilities",
-        "attribute": "responsibility_to_others"
-    }
-]
-
 
 def ask_questions():
     use_existing = input("Do you want to use the existing character map? (Y): ").strip().lower()
