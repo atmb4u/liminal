@@ -13,7 +13,7 @@ st.write(
 )
 
 # Ask user for their OpenAI API key
-openai_api_key = os.environ['OPENAI_API_KEY']
+openai_api_key = os.environ.get('OPENAI_API_KEY')
 if not openai_api_key:
     openai_api_key = st.text_input("OpenAI API Key", type="password")
 else:
