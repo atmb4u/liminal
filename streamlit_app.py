@@ -13,13 +13,14 @@ st.write(
 )
 
 # Ask user for their OpenAI API key
-openai_api_key = os.environ.get('OPENAI_API_KEY')
-if not openai_api_key:
-    openai_api_key = st.text_input("OpenAI API Key", type="password")
-else:
-    # Set the OpenAI API key
-    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
+try:
+    openai_api_key = os.environ.get('OPENAI_API_KEY')
+except Exception:
+    pass
 
+if not openai_api_key:
+    st.info("Please add your OpenAI API key to continue.", icon="🗝️")
+    openai_api_key = st.text_input("OpenAI API Key", type="password")
 
 # Load or create character map
 use_existing = st.checkbox("Use existing character map if available", value=False)
