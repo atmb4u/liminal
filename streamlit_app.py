@@ -2,7 +2,7 @@ import streamlit as st
 import json
 import os
 from liminal import pick_philosophers, process_story
-
+import openai
 
 # Set up the Streamlit app
 st.title("Liminal Comics")
@@ -13,7 +13,7 @@ st.write(
 )
 
 # Ask user for their OpenAI API key
-openai_api_key = os.environ['OPENAI_API_KEY']
+openai_api_key = "" # os.environ['OPENAI_API_KEY']
 if not openai_api_key:
     openai_api_key = st.text_input("OpenAI API Key", type="password")
 else:
@@ -42,11 +42,14 @@ else:
 
     # Generate philosophers and story
     if st.button("Convince me otherwise"):
-        philosophers = pick_philosophers(character_map)
-        story, final_comic = process_story((philosophers, character_map))
-        st.header("Food for Thought")
-        st.subheader(story["comic_title"])
-        st.image(final_comic)
-        st.write(story["story"])
-        st.write("Philosophers: " + ", ".join(story["list_of_philosophers"]))
-        st.write(story["comic_description"])
+        try:
+            philosophers = pick_philosophers(character_map)
+            story, final_comic = process_story((philosophers, character_map))
+            st.header("Food for Thought")
+            st.subheader(story["comic_title"])
+            st.image(final_comic)
+            st.write(story["story"])
+            st.write("Philosophers: " + ", ".join(story["list_of_philosophers"]))
+            st.write(story["comic_description"])
+        except openai.OpenAIError as e:
+            st.error(f"Enter a valid OpenAI API key: {e}")
